@@ -1,0 +1,72 @@
+#container {
+	background-color: white;
+}
+.grid_12 {
+	background-color: white;
+}
+.grid_4 {
+	background-color: white;
+}
+ul.topmenu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #white;
+}
+a:link:after {
+	content: "("attr(href)")";
+}
+/* Body */
+td {
+	text-align: center;
+	font-weight: bold;
+	font-family: "Times New Roman"
+}
+table {
+	border: 1px black;
+	text-align: center;
+}
+tr {
+	text-align:center;
+}
+caption {
+	font-weight: bold;
+	font-family: "Times New Roman"
+}
+#privacybold {
+	font-weight: bold;
+	padding: 5px;
+}
+li.faq {
+	text-align: left;
+}
+ol.faq {
+	list-style-type: none;
+	float: left;
+}
+ul.equipmenu {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	background-color: white;
+}
+li.equipmenu a {
+	display: block;
+	padding: 8px 16px;
+	text-decoration: none;
+	color: black;
+}
+#tictactoe {
+	text-decoration: none;
+	padding: 8px 16px;
+	color: white;
+	background-color: #333333;
+}
+/*	Footer	*/
+#foot {
+	color: black;
+	background-color: white;
+	padding: .1em;
+}
+

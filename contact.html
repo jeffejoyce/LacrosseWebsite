@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Contact Page</title>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="css/960_12_col.css" type="text/css">
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script>
+  $( function() {
+    $( "#datepicker" ).datepicker();
+  } );
+</script>
+</head>
+
+<body>
+<div class="container_12 clearfix" id="container">
+	<div class="grid_12">
+			<a href=""><img src="img/FinalProjectLogo.png" alt="Company Logo" style="width:100px; height:100px;"></a>
+	</div>
+	<div class="grid_12">
+		<ul class="topmenu">
+			<li class="topmenu"><a href="homepage.html">Home</a></li>
+			<li class="topmenu"><a href="about.html">About</a></li>
+			<li class="topmenu"><a href="faq.html">FAQ</a></li>
+			<li class="topmenu"><a href="basicinfo.html">Basic Information</a></li>
+			<li class="topmenu"><a href="menvswomen.html">Men's & Women's</a></li>
+			<li class="topmenu"><a href="equipment.html">Equipment</a></li>
+			<li class="topmenu"><a href="contact.html">Contact Us</a></li>
+			<li class="topmenu"><a href="privacy.html">Privacy</a></li>
+			<li class="topmenu"><a href="links.html">Links</a></li>
+			<li class="topmenu"><a href="tictactoe.html">Game</a></li>
+		</ul>
+	</div>
+	<br><br><br>
+	<div class="grid_12">
+		<form name="contact" onsubmit="return validateForm()" method="post">
+			<fieldset>
+				<legend>Contact Form</legend>
+				First Name:<br>
+				<input type="text" id ="fname" name="firstname"><br><br>
+				Last Name:<br>
+				<input type="text" id="lname" name="lastname"><br><br>
+				Address:<br>
+				<textarea name="remarks" rows="4" cols="50"></textarea><br><br>
+				City:<br>
+				<input type="text" name="city"><br><br>
+				State:<br>
+				<input type="text" name="state"><br><br>
+				Zip Code:<br>
+				<input type="text" id="zcode" name="zipcode"><br><br>
+				Email Address:<br>
+				<input type="email" id ="useremail" name="email"><br><br>
+				Phone Number:<br>
+				<input type="tel" name="phonum"><br><br>
+				Date of Birth:<br>
+				<input type="date" id="datepicker" name="dob"><br><br>
+				Gender<br>
+				<input type="radio" name="gender" value="male">Male<br>
+				<input type="radio" name="gender" value="female">Female<br>
+				<input type="radio" name="gender" value="other">Other<br><br>
+				Level of Experience<br>
+				<select name="experience">
+					<option value="beginner">Beginner | Less then 1 year of experience</option>
+					<option value="amateur">Amateur | 1-5 years of experience</option>
+					<option value="experienced">Experienced | 5+ years of experience</option>
+				</select><br><br>
+				Best Contact Time<br>
+				<input type="checkbox" name="bct" value="morning">Morning | 8am-12pm<br>
+				<input type="checkbox" name="bct" value="afternoon">Afternoon | 12pm-5pm<br>
+				<input type="checkbox" name="bct" value="night">Night | 5pm-9pm<br><br>
+				Other Remarks<br>
+				<textarea name="remarks" rows="4" cols="50">Please write any other remarks here</textarea><br><br>
+				<input type="submit" value="Submit">
+				<input type="reset" value="Reset">
+			</fieldset>
+		</form>
+	</div>
+	<div class="grid_12" id="foot">
+			<h3>If you have additional questions feel free to email us <a href="mailto:info@lacrossegoalie.com">here</a></h3>
+			<h4>1234 Main st. Baltimore, MD 11111</h4>
+	</div>
+<script type="text/javascript" src="contactjs.js"></script>
+<link rel="stylesheet" href="css/print.css" type="text/css" media="print">
+</body>
+
+</html>
